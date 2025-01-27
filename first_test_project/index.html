@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="em">
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is the short explanation of the Survey Form.</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">name: <input id="name" placeholder="enter your name here..." type="text"
+                    required></label>
+            <label id="email-label">email: <input id="email" type="email" placeholder="enter you email here..."
+                    required></label>
+            <label id="number-label">age: <input id="number" min=13 max=120 type="number"
+                    placeholder="enter a number betweeen 13 to 120" required></label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">
+                <select id="dropdown">
+                    <option>India</option>
+                    <option>China</option>
+                    <option>Japan</option>
+                    <option>USA</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="first-radio">
+                <input type="radio" value="first" name="radio-type" id="first-radio">Male
+            </label>
+            <label for="second-radio">
+                <input type="radio" value="second" name="radio-type" id="second-radio">Female
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>
+                <input type="checkbox" value="0">(select one)
+            </label>
+            <label>
+                <input type="checkbox" value="1">first
+            </label>
+            <label>
+                <input type="checkbox" value="2">second
+            </label>
+            <label>
+                <input type="checkbox" value="3">third
+            </label>
+        </fieldset>
+        <label>Provide a Comment here:
+            <textarea rows=3 cols=30 placeholder="Enter you comments here..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
