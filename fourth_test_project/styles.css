@@ -1,0 +1,15 @@
+@media (max-width: 720px) {
+    #email {
+        width: 300px;
+    }
+}
+
+body {
+    display: flex;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
